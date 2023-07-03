@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="ht.css">
+    <title>js dmeosite</title>
+</head>
+<body>
+   <div class="hero">
+    <nav>
+        <a href="main.html">
+        <img src="menu.png" class="menu"></a>
+
+        <img src="logo.png" class="logo">
+        <ul>
+            <li><a href="">latest</a></li>
+            <li><a href="">Mordern</a></li>
+            <li><a href="">Contemporary</a></li>
+            <li><a href="">Latest</a></li>
+        </ul>
+        <button class="btn" onclick="togglebtn()" id="btn" > <span></span> </button>
+    </nav>
+<div class="lampcon">
+    <img src="lamp.png" class="lamp">
+    <img src="light.png" class="light" id="light">
+</div>
+
+<div class="textcon">
+    <h1>latest in lighting</h1>
+    <p> make the toggle button using JavaScript <br>
+     that will hide and show the light images on this website. <br>
+     This type of website design we can use for lighting business website.</p>
+
+     <a href="home.html"> <span></span>  check all collections</a>
+     <a href="main.html"> <span></span> Back to main menu </a>
+     
+     
+     
+     <div class="control">
+        <p>04</p>
+        <div class="line"> <span></span> </div>
+        <p>05</p>
+
+     </div>
+    </div>
+
+   </div> 
+
+   <script>
+
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+    function togglebtn()
+    {
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+
+    }
+   </script>
+   
+</body>
+</html>
